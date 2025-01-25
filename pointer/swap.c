@@ -6,6 +6,7 @@ void bad_swap(int x, int y) /* WRONG */
 	temp = x;
 	x = y;
 	y = temp;
+	printf("%d", temp);
 }
 
 
@@ -15,6 +16,8 @@ void ptr_swap(int *px, int *py) /* interchange *px and *py */
 	temp = *px;
 	*px = *py;
 	*py = temp;
+	
+	printf("%d", temp);
 }
 
 int main()
